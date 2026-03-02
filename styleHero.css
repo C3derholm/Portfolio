@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #0b0c10 ;
+    
+}
+
+#hero{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-handball{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    background: url('Images/Handboll.jpg') 20% center / cover no-repeat;
+    mask-image: linear-gradient(to right, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 40%, transparent 70%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 40%, transparent 70%);
+}
+
+#matrixCanvas{
+    position: absolute;
+    inset: 0;
+     mask-image: linear-gradient(to left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, transparent 75%);
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, transparent 75%);
+
+}
+
+.topbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  
+  height: 55px;
+  padding-bottom: 0;
+  padding: 10px 40px;
+  background: rgba(11, 12, 16, 0, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid #252630;
+
+  z-index: 1;
+
+
+}
