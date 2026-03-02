@@ -14,6 +14,7 @@ body{
     min-height: 100vh;
     position: relative;
     overflow: hidden;
+    z-index: 0;
 }
 
 .hero-handball{
@@ -26,6 +27,7 @@ body{
     background: url('Images/Handboll.jpg') 20% center / cover no-repeat;
     mask-image: linear-gradient(to right, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 40%, transparent 70%);
   -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 40%, transparent 70%);
+  
 }
 
 #matrixCanvas{

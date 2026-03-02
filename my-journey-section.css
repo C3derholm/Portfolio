@@ -1,0 +1,36 @@
+#my-journey{
+ background-color: #111217 ;
+ padding: 8rem ;
+ display: flex;
+ justify-content: center;
+
+}
+
+.section-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+
+    
+}
+
+.section-prefix{
+    align-self: flex-start;
+    color: #e8a020 ;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-bottom: 12px;
+    
+
+}
+
+.section-heading{
+    align-self: flex-start;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: white;
+}
