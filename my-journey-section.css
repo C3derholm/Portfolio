@@ -1,8 +1,7 @@
 #my-journey{
  background-color: #111217 ;
- padding: 8rem ;
- display: flex;
- justify-content: center;
+ padding: 90px;
+ 
 
 }
 
@@ -10,27 +9,96 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    max-width: 900px;
-
-    
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: white;
 }
 
+    
+
+
 .section-prefix{
+    margin-left: 100px;
     align-self: flex-start;
     color: #e8a020 ;
     font-size: 0.9rem;
     letter-spacing: 0.1em;
     display: block;
-    margin-bottom: 12px;
+    
+    
     
 
 }
 
-.section-heading{
-    align-self: flex-start;
-    font-size: 3rem;
+.section-my-journey{
+    margin: 16px auto;
+    color: #7a7b8e;
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 800px;
+    margin-bottom: 16px;
+}
+
+.timeline {
+    position: relative;
+    margin-left: 200px;
+    margin-top: 45px;
+}
+
+.timeline::before{
+    content: '';
+    position: absolute;
+    left:-29.5px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #252630;
+}
+
+.timeline-item{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-dot{
+    position: absolute;
+    left: -36px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #18191f;
+    border: 2px solid #252630;
+}   
+
+.timeline-year{
+    font-family: 'Space Mono',monospace;
+    font-size: 11px;
+    color: #e8a020;
+    margin-bottom: 4px;
+}
+
+.timeline-club{
     font-weight: 600;
-    line-height: 1.1;
-    color: white;
+    font-size: 1rem;
+    color: #e8e9f0;
+    margin-bottom: 6px;
+}
+
+.timeline-text{
+    color: #7a7b8e;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.timeline-highlight{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-highlight .timeline-dot{
+    background: #e8a020;
+    border-color: #e8a020;
+    box-shadow: 0 0 12px rgba(232,160,32,0.4);
 }

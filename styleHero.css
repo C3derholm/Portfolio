@@ -24,7 +24,10 @@ body{
     min-width: 100%;
     min-height: 100%;
     transform: translate(-50%, -50%);
-    background: url('Images/Handboll.jpg') 20% center / cover no-repeat;
+    background-image: url('Images/Handboll.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     mask-image: linear-gradient(to right, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 40%, transparent 70%);
   -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 40%, transparent 70%);
   
@@ -49,9 +52,7 @@ body{
   align-items: center;
   justify-content: space-between;  
   
-  height: 55px;
-  padding-bottom: 0;
-  padding: 10px 40px;
+  padding: 15px 90px;
   background: rgba(11, 12, 16, 0, 0.88);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -63,7 +64,8 @@ body{
 }
 
 .nav-signature{
-   display: block;
+  margin-left: 100px;
+  display: block;
   font-weight: 600;
   line-height: 1;
   color: #000000;
@@ -87,7 +89,7 @@ body{
 .hero-info{
   position: absolute;
   z-index: 10;
-  top: 30%;
+  top: 40%;
   transform:translateY(-50%);
   left: 30%;
   max-width: 600px;
