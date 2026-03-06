@@ -13,10 +13,10 @@
 }
 
 .my-skills-prefix{
-    grid: 1;
+    grid-column: 1;
     font-size: 1.1rem;
     align-items:center ;
-    text-align: center;
+    text-align: start;
     color: #e8a020 ;
 }
 
@@ -34,7 +34,7 @@
 .skills{
     font-family: 'Space Mono',monospace;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(4,1fr);
     gap: 50px;
     padding-top: 40px;
 }
@@ -55,8 +55,8 @@
 
 .skills-box img{
     align-items: center;
-    width: 48px;
-    height: 48px;
+    width: 58px;
+    height: 58px;
 }
 
 .skills-box:hover{

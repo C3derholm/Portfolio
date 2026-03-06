@@ -1,0 +1,132 @@
+#my-projects{
+ background-color: #111217;
+ padding: 90px; 
+ 
+}
+
+.my-projects-header{
+    position: relative;
+    display: grid;
+    grid-template-columns:200px 1fr 200px ;
+    align-items: start;
+
+}
+
+.my-projects-prefix{
+    grid-column: 1;
+    font-size: 1.1rem;
+    align-items:center ;
+    text-align: start;
+    color: #e8a020 ;
+}
+
+.my-projects-title{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: white;
+}
+
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: clamp(20px, 2vw, 40px);
+    margin-top: 48px;
+}
+
+.projects-cards {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.03),
+        rgba(0, 0, 0, 0.35)
+    );
+    backdrop-filter: blur(12px);
+    border: 1px solid #252630;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(62, 201, 240, 0.15);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.projects-cards:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 50px rgba(62, 201, 240, 0.3);
+    border-color: #3ec9f0;
+}
+
+.projects-box-top img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #252630;
+}
+
+.projects-box-bottom {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.project-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e8e9f0;
+}
+
+.project-text {
+    color: #7a7b8e;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tag {
+    background: rgba(62, 201, 240, 0.08);
+    border: 1px solid rgba(62, 201, 240, 0.2);
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-family: 'Space Mono', monospace;
+    color: #3ec9f0;
+}
+
+.project-links {
+    display: flex;
+    gap: 12px;
+}
+
+.project-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: #7a7b8e;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.project-links a:hover {
+    color: #3ec9f0;
+}
+
+.project-links a:hover span {
+    text-decoration: underline; 
+}
+
+.project-links a i {
+    font-size: 18px;
+}
