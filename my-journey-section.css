@@ -35,7 +35,7 @@
 .section-my-journey{
     margin: 16px auto;
     color: #7a7b8e;
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.7;
     max-width: 800px;
     margin-bottom: 16px;
@@ -75,21 +75,21 @@
 
 .timeline-year{
     font-family: 'Space Mono',monospace;
-    font-size: 11px;
+    font-size: 15px;
     color: #e8a020;
     margin-bottom: 4px;
 }
 
 .timeline-club{
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #e8e9f0;
     margin-bottom: 6px;
 }
 
 .timeline-text{
     color: #7a7b8e;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.6;
 }
 
@@ -118,7 +118,7 @@
     border: 1px solid #252630;
     border-radius: 10px;
     box-shadow:0px 0px 10px rgba(62, 201, 240, 0.2);
-    font-size: 11px;
+    font-size: 15px;
     color: #ffffff;
     
     
@@ -132,7 +132,7 @@
 }
 
 .qualities-card p{
-    font-size: 11px;
+    font-size: 13px;
     color: #9a9a9e;
     text-align: center;
     padding: 8px;

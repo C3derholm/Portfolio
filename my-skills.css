@@ -14,6 +14,7 @@
 
 .my-skills-prefix{
     grid: 1;
+    font-size: 1.1rem;
     align-items:center ;
     text-align: center;
     color: #e8a020 ;
@@ -48,7 +49,7 @@
     box-shadow:0px 0px 10px rgba(62, 201, 240, 0.2);
     font-size: 11px;
     color: #ffffff;
-    transition:  0.3s,  0.3s;
+    transition: 0.3s, 0.3s;
 }
 
 
