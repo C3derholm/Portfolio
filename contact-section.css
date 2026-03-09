@@ -1,0 +1,119 @@
+#contact-section{
+ background-color: #18191f ;
+ padding: 90px; 
+}
+
+.contact-header{
+    position: relative;
+    display: grid;
+    grid-template-columns:200px 1fr 200px ;
+    align-items: start;
+
+}
+
+.contact-prefix{
+    grid-column: 1;
+    font-size: 1.1rem;
+    align-items:center ;
+    text-align: start;
+    color: #e8a020 ;
+}
+
+.contact-title{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: white;
+}
+
+.contact-text{
+    margin: 16px auto;
+    color: #7a7b8e;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    max-width: 800px;
+    margin-bottom: 16px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 48px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-row label {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: #7a7b8e;
+    letter-spacing: 0.1em;
+}
+
+.form-row input,
+.form-row textarea {
+    background: #18191f;
+    border: 1px solid #252630;
+    border-radius: 8px;
+    padding: 14px 14px;
+    color: #e8e9f0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    border-color: #3ec9f0;
+}
+
+.form-row textarea {
+    min-height: 160px;
+    resize: none;
+}
+
+.contact-btn {
+    background: #e8a020;
+    color: #0b0c10;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.contact-btn:hover {
+    background: #f0b030;
+    transform: translateY(-2px);
+}
+
+.form-row textarea::-webkit-scrollbar {
+    width: 6px;
+}
+
+.form-row textarea::-webkit-scrollbar-track {
+    background: #111217;
+}
+
+.form-row textarea::-webkit-scrollbar-thumb {
+    background: #3ec9f0;
+    border-radius: 999px;
+}
+
+.form-row textarea::-webkit-scrollbar-thumb:hover {
+    background: #e8a020;
+}
