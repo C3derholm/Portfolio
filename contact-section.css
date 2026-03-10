@@ -117,3 +117,56 @@
 .form-row textarea::-webkit-scrollbar-thumb:hover {
     background: #e8a020;
 }
+
+.footer {
+    background-color: #18191f;
+    padding: 15px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #252630;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #3ec9f0, #e8a020, transparent);
+    background-size: 200% 100%;
+    animation: waveBorder 6s linear infinite;
+}
+
+@keyframes waveBorder {
+    0%   { background-position: 200% 0; }
+    100% { background-position: 0% 0; }
+}
+
+.footer-text {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: #7a7b8e;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icon img {
+    width: 140px;
+    height: 140px;
+    opacity: 0.6;
+    transition: opacity 0.2s, transform 0.2s;
+    
+    
+}
+
+.footer-icon:hover img {
+    opacity: 1;
+    transform: scale(1.3);
+}

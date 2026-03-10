@@ -86,18 +86,21 @@ body{
 }
 
 #right-top a:hover{
-  color:#3ec9f0 ;
+  color:#e8a020 ;
 }
 
 .hero-info{
   position: relative;
   z-index: 10;
   max-width: 600px;
+  text-align: center;
 }
 
 .hero-before{
   display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: center;
   gap: 10px;
   color: #e8a020;
   font-family: 'Space Mono', monospace;
@@ -150,6 +153,8 @@ body{
 
 .career-titles{
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 16px;

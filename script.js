@@ -1,7 +1,7 @@
 const canvas=document.getElementById('matrixCanvas');
 const ctx = canvas.getContext('2d');
-const fontSize=13;
-const colwidth= 90;
+const fontSize=18;
+const colwidth= 35;
 let drops=[];
 
 const chars = 'namespace class public private static void string int bool return new using Console WriteLine if else for foreach while try catch async await Task var override interface abstract protected'.split(' ');
@@ -14,7 +14,7 @@ function resizeCanvas() {
 }
 
 function drawMatrix() {
-  ctx.fillStyle = 'rgba(11, 12, 16, 0.05)';
+  ctx.fillStyle = 'rgba(11, 12, 16, 0.20)';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.font = fontSize + 'px Space Mono, monospace';
 
@@ -39,4 +39,4 @@ function drawMatrix() {
 
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
-setInterval(drawMatrix, 60);
+setInterval(drawMatrix, 70);

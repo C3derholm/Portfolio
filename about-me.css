@@ -1,0 +1,41 @@
+#about-me{
+ background-color: #18191f;
+ padding: 90px; 
+ 
+}
+
+.about-me-header{
+    position: relative;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    align-items: start;
+}
+
+ .about-me-prefix{
+    
+    grid-column: 1;
+    align-items: center;
+    text-align: start;
+    color: #e8a020 ;
+    
+} 
+
+ .about-me-title{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: white;
+} 
+  
+.about-me-text{
+    margin: 32px auto 0;
+    color: #7a7b8e;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 800px;
+    align-items: center;
+}
