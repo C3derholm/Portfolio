@@ -55,6 +55,14 @@
                 <span class="career-info">1x EM-Silver</span>
                 <span class="career-info">42 A-Landskamper</span>
             </div>
+            <div class="download-cv">
+                <a href="cv.pdf" download class="cv-btn">
+                    <i class="fa solid fa-download"></i> Ladda ner CV
+                </a>
+                <a href="https://www.linkedin.com/in/andreas-cederholm-608b07371/" target="_blank" class="cv-btn">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
         </div>
     </section>
 
@@ -187,6 +195,67 @@
             här portföljen är en samling av projekt jag har byggt under min utbildning och min resa mot att bli
             utvecklare.</p>
 
+
+        <div class="references">
+            <div class="references-track">
+
+                <div class="references-card">
+                    <p class="reference-quote">"Andreas är en av de mest disciplinerade och lagfokuserade spelare jag
+                        tränat. Han tar med sig samma mentalitet in i allt han gör."</p>
+                    <div>
+                        <p class="reference-name">Jesper Larsson</p>
+                        <p class="reference-role">Sportchef · MT Melsungen</p>
+                    </div>
+                </div>
+
+                <div class="references-card">
+                    <p class="reference-quote">"Han är alltid den förste att komma till träning och den siste att lämna.
+                        Andreas leder med exempel och inspirerar hela laget."</p>
+                    <div>
+                        <p class="reference-name">Florian Kehrmann</p>
+                        <p class="reference-role">Tränare · TBV Lemgo</p>
+                    </div>
+                </div>
+
+                <div class="references-card">
+                    <p class="reference-quote">"Fantastisk lagspelare med ett enormt engagemang. Andreas gör alla runt
+                        honom bättre — på planen och utanför. Rekommenderas "</p>
+                    <div>
+                        <p class="reference-name">Jörg Zereike</p>
+                        <p class="reference-role">Sportchef · TBV Lemgo</p>
+                    </div>
+                </div>
+
+
+                <div class="references-card">
+                    <p class="reference-quote">"Andreas är en av de mest disciplinerade och lagfokuserade spelare jag
+                        tränat. Han tar med sig samma mentalitet in i allt han gör."</p>
+                    <div>
+                        <p class="reference-name">Jesper Larsson</p>
+                        <p class="reference-role">Sportchef · MT Melsungen</p>
+                    </div>
+                </div>
+
+                <div class="references-card">
+                    <p class="reference-quote">"Han är alltid den förste att komma till träning och den siste att lämna.
+                        Andreas leder med exempel och inspirerar hela laget."</p>
+                    <div>
+                        <p class="reference-name">Florian Kehrmann</p>
+                        <p class="reference-role">Tränare · TBV Lemgo</p>
+                    </div>
+                </div>
+
+                <div class="references-card">
+                    <p class="reference-quote">"Fantastisk lagspelare med ett enormt engagemang. Andreas gör alla runt
+                        honom bättre — på planen och utanför."</p>
+                    <div>
+                        <p class="reference-name">Jörg Zereike</p>
+                        <p class="reference-role">Sportchef · TBV Lemgo</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 
 
@@ -374,21 +443,23 @@
             </div>
         </div>
 
-        <form class="contact-form">
+        <form class="contact-form" id="form" action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="53019611-75b9-4a60-b374-c8fc9a24c9d7">
 
             <div class="form-row">
                 <label for="name">Ditt Namn</label>
-                <input type="text" id="name" placeholder="Anna Exempel">
+                <input type="text" id="name" name="name" placeholder="Anna Exempel">
             </div>
 
             <div class="form-row">
                 <label for="email">E-Postadress</label>
-                <input type="email" id="email" placeholder="anna@exempel.com">
+                <input type="email" id="email" name="email" placeholder="anna@exempel.com">
             </div>
 
             <div class="form-row">
                 <label for="message">Meddelande</label>
-                <textarea id="message" placeholder="Skriv ditt meddelande här..."></textarea>
+                <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..."></textarea>
             </div>
 
             <button type="submit" class="contact-btn">Skicka meddelande</button>

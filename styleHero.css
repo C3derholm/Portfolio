@@ -172,4 +172,45 @@ body{
   color: #e8a020; 
 }
 
+.download-cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 6px;
+}
+
+.cv-btn{
+  margin-top: 24px;
+  padding: 12px 28px;
+  background: transparent;
+  border: 1px solid #e8a020;
+  border-radius: 6px;
+  color: #e8a020;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  text-decoration: none;
+  
+
+}
+
+.linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #e8a020;
+    border-radius: 6px;
+    color: #e8a020;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    
+}
+
+.cv-btn:hover{
+  background-color: #e8a020;
+  color: #0b0c10;
+}
 
