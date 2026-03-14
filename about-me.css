@@ -1,6 +1,6 @@
 #about-me{
  background-color: #18191f;
- padding: 90px; 
+ padding: clamp(48px, 8vw,90px); 
  
 }
 
@@ -12,31 +12,35 @@
 }
 
  .about-me-prefix{
-    
     grid-column: 1;
+    font-size: 1.1rem;
     align-items: center;
     text-align: start;
-    color: #e8a020 ;
-    
+    color: #e8a020 ;  
 } 
 
  .about-me-title{
     display: flex;
-    flex-direction: column;
-    grid-column: 2;
+    flex-direction: column;  
     text-align: center;
-    font-size: 3rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 600;
     line-height: 1.1;
-    color: white;
+    background: linear-gradient(90deg, #ffffff, #e8a020);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 8px;
+    display: inline-block;
 } 
   
 .about-me-text{
     margin: 32px auto 0;
-    color: #7a7b8e;
+    color: #c5c6d0;
     font-size: 1.1rem;
     line-height: 1.7;
-    max-width: 800px;
+    width: min(800px, 90%);
     align-items: center;
 }
 
@@ -46,6 +50,7 @@
     overflow: hidden;
     mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
     -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    max-width: 100vw;
 }
 
 .references-track{
@@ -99,4 +104,26 @@
 
 .reference-role{
     color: #e8a020;
+}
+
+@media (max-width: 1024px) {
+  .about-me-header {
+    grid-template-columns: 1fr;
+  }
+
+  .about-me-prefix {
+    grid-column: 1;
+  }
+
+  .about-me-title {
+    grid-column: 1;
+  }
+
+  .references {
+    padding: 20px 0 20px 0;
+  }
+
+  .references-card {
+    width: 260px;
+  }
 }

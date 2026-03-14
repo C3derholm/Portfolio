@@ -1,6 +1,6 @@
 #contact-section{
  background-color: #111217 ;
- padding: 90px; 
+ padding: clamp(48px, 8vw, 90px); 
 }
 
 .contact-header{
@@ -24,18 +24,24 @@
     flex-direction: column;
     grid-column: 2;
     text-align: center;
-    font-size: 3rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 600;
     line-height: 1.1;
-    color: white;
+    background: linear-gradient(90deg, #ffffff, #e8a020);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 8px;
+    display: inline-block;
 }
 
 .contact-text{
     margin: 16px auto;
     color: #7a7b8e;
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
     line-height: 1.7;
-    max-width: 800px;
+    width: min(800px, 90%);
     margin-bottom: 16px;
 }
 
@@ -55,8 +61,8 @@
 
 .form-row label {
     font-family: 'Space Mono', monospace;
-    font-size: 11px;
-    color: #7a7b8e;
+    font-size: 17px;
+    color: #e8a020;
     letter-spacing: 0.1em;
 }
 
@@ -90,7 +96,7 @@
     border-radius: 8px;
     padding: 16px;
     font-family: 'Space Mono', monospace;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.2s;
@@ -120,7 +126,7 @@
 
 .footer {
     background-color: #18191f;
-    padding: 15px 90px;
+    padding: 15px clamp(24px, 8vw, 90px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,6 +134,7 @@
     position: relative;
     overflow: hidden;
 }
+
 
 .footer::before {
     content: '';
@@ -148,8 +155,8 @@
 
 .footer-text {
     font-family: 'Space Mono', monospace;
-    font-size: 12px;
-    color: #7a7b8e;
+    font-size: clamp(15px, 1.2vw, 13px);
+    color: #e8a020;
 }
 
 .footer-icons {
@@ -158,8 +165,8 @@
 }
 
 .footer-icon img {
-    width: 140px;
-    height: 140px;
+    width: clamp(30px, 8vw, 140px);
+    height: clamp(30px, 8vw, 140px);
     opacity: 0.6;
     transition: opacity 0.2s, transform 0.2s;
     
@@ -169,4 +176,37 @@
 .footer-icon:hover img {
     opacity: 1;
     transform: scale(1.3);
+}
+
+.error-message{
+    color: #e84040;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+#weather-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@media (max-width: 1024px) { 
+ .contact-header {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-prefix {
+    grid-column: 1;
+  }
+
+  .contact-title {
+    grid-column: 1;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
 }

@@ -1,6 +1,6 @@
 #my-journey{
  background-color: #111217 ;
- padding: 90px; 
+ padding: clamp(48px, 8vw, 90px); 
 }
 
 .section-header{
@@ -13,10 +13,10 @@
  .section-prefix{
     
     grid-column: 1;
+    font-size: 1.1rem;
     align-items: center;
     text-align: start;
-    color: #e8a020 ;
-    
+    color: #e8a020 ;    
 } 
 
  .section-title{
@@ -24,18 +24,24 @@
     flex-direction: column;
     grid-column: 2;
     text-align: center;
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 4vw, 3rem);
     font-weight: 600;
     line-height: 1.1;
-    color: white;
+    background: linear-gradient(90deg, #ffffff, #e8a020);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 8px;
+    display: inline-block;
 } 
   
 
 
 .section-my-journey{
     margin: 16px auto;
-    color: #7a7b8e;
-    font-size: 1.3rem;
+    color: #c5c6d0;
+    font-size: clamp(1rem, 2vw, 1.3rem);
     line-height: 1.7;
     max-width: 800px;
     margin-bottom: 16px;
@@ -88,7 +94,7 @@
 }
 
 .timeline-text{
-    color: #7a7b8e;
+    color: #c5c6d0;
     font-size: 1.1rem;
     line-height: 1.6;
 }
@@ -107,19 +113,20 @@
 .qualities{
     font-family: 'Space Mono',monospace;
     display: grid;
+    margin-top: 64px;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap: 50px;
+    gap: clamp(24px, 4vw, 50px);
 }
 
 .qualities-card{
-    background: #18191f;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.04), rgba(0,0,0,0.3));
     display: flex;
     flex-direction: column;
     border: 1px solid #252630;
     border-radius: 10px;
     box-shadow:0px 0px 10px rgba(62, 201, 240, 0.2);
     font-size: 15px;
-    color: #ffffff;
+    color: #3ec9f0;
     
     
 
@@ -133,8 +140,47 @@
 
 .qualities-card p{
     font-size: 13px;
-    color: #9a9a9e;
+    color: #c5c6d0;
     text-align: center;
     padding: 8px;
+}
+
+.qualities-section{
+    margin-top: 64px;
+    text-align: center;
+
+}
+
+.qualities-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.1;
+    background: linear-gradient(90deg, #ffffff, #e8a020);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 2px solid #e8a020;
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+} 
+
+
+
+
+@media (max-width: 1024px) {
+  .section-header {
+    grid-template-columns: 1fr;
+  }
+
+  .section-prefix {
+    grid-column: 1;
+  }
+
+  .section-title{
+    grid-column: 1;
+  }
 }
 
