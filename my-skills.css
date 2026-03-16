@@ -58,6 +58,7 @@
 
 
 .skills-box img{
+    object-fit: contain;
     width: 58px;
     height: 58px;
     filter: drop-shadow(0px 0px 8px rgba(62, 201, 240, 0.4));

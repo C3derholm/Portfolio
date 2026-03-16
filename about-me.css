@@ -38,7 +38,7 @@
 .about-me-text{
     margin: 32px auto 0;
     color: #c5c6d0;
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
     line-height: 1.7;
     width: min(800px, 90%);
     align-items: center;

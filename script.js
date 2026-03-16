@@ -110,11 +110,8 @@ form.addEventListener('submit', async (e) => {
 async function getWeather() {
   const apiUrl = "https://api.openweathermap.org/data/2.5/weather";
   const apiKey = "d460b875a4f7f31a722c38d627ecc822";
-  
-   navigator.geolocation.getCurrentPosition(async (position) => {
-    const lat = position.coords.latitude;
-    const lon = position.coords.longitude;
-    const url = `${apiUrl}?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=sv`;
+  const city= "Skövde";
+  const url = `${apiUrl}?q=${city}&appid=${apiKey}&units=metric&lang=sv`;
     
 
   try {
@@ -133,8 +130,8 @@ async function getWeather() {
   } catch (error) {
     console.error("Det gick inte att hämta väderdata:", error);
   }
-});
-}
+};
+
 
 getWeather();
 setInterval(getWeather, 60000);
