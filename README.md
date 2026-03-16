@@ -12,6 +12,8 @@ kunskaper, projekt, referenser och kontakt.
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
+- Git & Github
+- Flexbox/Grid
 
 ## Metoder och principer
 
