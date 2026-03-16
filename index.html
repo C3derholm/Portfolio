@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -191,7 +191,7 @@
         <div class="about-me-header">
             <p class="about-me-prefix">//02. Om mig</p>
             <div class="about-me-title">
-                <h7 class="section-h7">Om Mig</h7>
+                <h2 class="about-me-h2">Om Mig</h2>
             </div>
         </div>
 
@@ -465,25 +465,25 @@
             </div>
         </div>
 
-        <form class="contact-form" id="form" action="https://api.web3forms.com/submit" method="POST">
+        <form class="contact-form" id="form" action="https://api.web3forms.com/submit" method="POST" novalidate>
 
             <input type="hidden" name="access_key" value="53019611-75b9-4a60-b374-c8fc9a24c9d7">
 
             <div class="form-row">
                 <label for="name">Ditt Namn</label>
-                <input type="text" id="name" name="name" placeholder="Anna Exempel" novalidate>
+                <input type="text" id="name" name="name" placeholder="Anna Exempel" >
                 <span class="error-message" id="name-error"></span>
             </div>
 
             <div class="form-row">
                 <label for="email">E-Postadress</label>
-                <input type="email" id="email" name="email" placeholder="anna@exempel.com" novalidate>
+                <input type="email" id="email" name="email" placeholder="anna@exempel.com" >
                 <span class="error-message" id="email-error"></span>
             </div>
 
             <div class="form-row">
                 <label for="message">Meddelande</label>
-                <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..." novalidate></textarea>
+                <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..." ></textarea>
                 <span class="error-message" id="message-error"></span>
             </div>
 
