@@ -10,6 +10,11 @@ body{
     
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 52px;
+}
+
 #hero{
     min-height: 100vh;
     position: relative;
@@ -101,7 +106,7 @@ body{
 .hero-image img{
   width: clamp(150px, 20vw, 360px);
   height: clamp(180px, 22vw,400px );
-  border-radius: 16px;
+  border-radius: 60%;
   object-fit: cover;
   border: 1px solid rgba(232, 160, 32, 0.4);
   box-shadow: 0 0 40px rgba(232, 160, 32, 0.25);
@@ -235,7 +240,7 @@ body{
 
   #right-top a {
     margin-left: 12px;
-    font-size: 10px;
+    font-size: 12px;
   }
   .download-cv {
     justify-content: center;
@@ -244,6 +249,10 @@ body{
   .hero-content{
     flex-direction: column;
     text-align: center;
+  }
+
+  .section-prefix,.about-me-prefix,.my-skills-prefix,.my-projects-prefix,.contact-prefix {
+    display: none;
   }
 
 }

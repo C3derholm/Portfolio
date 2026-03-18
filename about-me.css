@@ -58,6 +58,10 @@
     gap: 24px;
     max-width: 600px;
     animation: scrollLeft 35s linear infinite;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smothing:grayscale;
+    transform: translateZ(0);
+
 }
 
 .references-track:hover{
@@ -81,7 +85,7 @@
     flex-direction: column;
     gap: 20px;
     transition: border-color 0.3s, transform 0.3s;
-
+    
 }
 
 .reference-avatar {
@@ -144,4 +148,18 @@
   .references-card {
     width: 260px;
   }
+}
+
+@media (max-width:768px){
+    .references-track {
+        animation: none;
+        overflow-x:scroll;
+        scroll-snap-type:x mandatory;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    .references-card {
+        scroll-snap-align:start;
+        min-width: 280px;
+    }
 }

@@ -135,3 +135,4 @@ async function getWeather() {
 
 getWeather();
 setInterval(getWeather, 60000);
+
