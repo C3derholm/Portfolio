@@ -1,25 +1,25 @@
-#my-journey{
- background-color: #111217 ;
- padding: clamp(48px, 8vw, 90px); 
+#my-journey {
+    background-color: #111217;
+    padding: clamp(48px, 8vw, 90px);
 }
 
-.section-header{
+.section-header {
     position: relative;
     display: grid;
     grid-template-columns: 200px 1fr 200px;
     align-items: start;
 }
 
- .section-prefix{
-    
+.section-prefix {
+
     grid-column: 1;
     font-size: 1.1rem;
     align-items: center;
     text-align: start;
-    color: #e8a020 ;    
-} 
+    color: #e8a020;
+}
 
- .section-title{
+.section-title {
     display: flex;
     flex-direction: column;
     grid-column: 2;
@@ -34,11 +34,11 @@
     border-bottom: 2px solid #e8a020;
     padding-bottom: 8px;
     display: inline-block;
-} 
-  
+}
 
 
-.section-my-journey{
+
+.section-my-journey {
     margin: 16px auto;
     color: #c5c6d0;
     font-size: clamp(1rem, 2vw, 1.3rem);
@@ -49,26 +49,26 @@
 
 .timeline {
     position: relative;
-    margin-left: 30px;
-    margin-top: 45px;
+    margin: 45px auto 0;
+    max-width: min(800px, 90%);
 }
 
-.timeline::before{
+.timeline::before {
     content: '';
     position: absolute;
-    left:-29.5px;
+    left: -29.5px;
     top: 0;
     bottom: 0;
     width: 1px;
     background: #252630;
 }
 
-.timeline-item{
+.timeline-item {
     position: relative;
     margin-bottom: 40px;
 }
 
-.timeline-dot{
+.timeline-dot {
     position: absolute;
     left: -36px;
     top: 6px;
@@ -77,75 +77,95 @@
     border-radius: 50%;
     background: #18191f;
     border: 2px solid #252630;
-}   
+}
 
-.timeline-year{
-    font-family: 'Space Mono',monospace;
+.timeline-year {
+    font-family: 'Space Mono', monospace;
     font-size: 15px;
     color: #e8a020;
     margin-bottom: 4px;
 }
 
-.timeline-club{
+.timeline-club {
     font-weight: 600;
     font-size: 1.2rem;
     color: #e8e9f0;
     margin-bottom: 6px;
 }
 
-.timeline-text{
+.timeline-club-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+#kristianstad-logo{
+    width: 100px;
+    height: 100px;
+}
+
+.timeline-club-logo {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    object-fit: contain;
+}
+
+.timeline-text {
     color: #c5c6d0;
     font-size: 1.1rem;
     line-height: 1.6;
+    max-width: min(600px, 90%);
 }
 
-.timeline-highlight{
+.timeline-highlight {
     position: relative;
     margin-bottom: 40px;
 }
 
-.timeline-highlight .timeline-dot{
+.timeline-highlight .timeline-dot {
     background: #e8a020;
     border-color: #e8a020;
-    box-shadow: 0 0 12px rgba(232,160,32,0.4);
+    box-shadow: 0 0 12px rgba(232, 160, 32, 0.4);
 }
 
-.qualities{
+.qualities {
     display: grid;
     margin-top: 64px;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: clamp(24px, 4vw, 50px);
 }
 
-.qualities-card{
-    background: linear-gradient(to bottom, rgba(255,255,255,0.04), rgba(0,0,0,0.3));
+.qualities-card {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.3));
     display: flex;
     flex-direction: column;
     border: 1px solid #252630;
     border-radius: 10px;
-    box-shadow:0px 0px 10px rgba(62, 201, 240, 0.2);
+    box-shadow: 0px 0px 10px rgba(62, 201, 240, 0.2);
     font-size: 15px;
     color: #fdfdfd;
-    
-    
 
 }
 
-.qualities-card-h3{
+.qualities-card-h3 {
     text-align: center;
     font-weight: 600;
     font-size: 1.2rem;
     padding-top: 8px;
 }
 
-.qualities-card p{
+.qualities-card p {
     font-size: 1.1rem;
     color: #c5c6d0;
     text-align: center;
     padding: 8px;
 }
 
-.qualities-section{
+.qualities-section {
     margin-top: 64px;
     text-align: center;
 
@@ -165,22 +185,21 @@
     border-bottom: 2px solid #e8a020;
     padding-bottom: 8px;
     margin-bottom: 32px;
-} 
+}
 
 
 
 
 @media (max-width: 1024px) {
-  .section-header {
-    grid-template-columns: 1fr;
-  }
+    .section-header {
+        grid-template-columns: 1fr;
+    }
 
-  .section-prefix {
-    grid-column: 1;
-  }
+    .section-prefix {
+        grid-column: 1;
+    }
 
-  .section-title{
-    grid-column: 1;
-  }
+    .section-title {
+        grid-column: 1;
+    }
 }
-

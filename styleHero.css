@@ -136,7 +136,7 @@ body{
 .hero-before::after{
   content: '';
   display: inline-block;
-  width: 32px;
+  width: 35px;
   height: 1px;
   background: #e8a020;
 }
